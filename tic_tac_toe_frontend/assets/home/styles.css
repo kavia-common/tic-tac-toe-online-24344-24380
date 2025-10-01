@@ -1,0 +1,345 @@
+/* Screen: home (1:49) */
+#screen-home-1-49 {
+  position: relative;
+  width: 430px;
+  height: 932px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  border-radius: var(--radius-35);
+  box-shadow: var(--shadow-0);
+  overflow: hidden;
+}
+
+/* Title "Foodgo" typo_5 */
+.foodgo {
+  position: absolute;
+  left: 19px;   /* -991 - (-1010) = 19 */
+  top: 28px;    /* -978 - (-1006) = 28 */
+  width: 129px;
+  height: 61px;
+  margin: 0;
+  font-family: var(--font-lobster);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60.6094px;
+  letter-spacing: 0;
+  color: var(--fig-dark-text);
+}
+
+/* Subtitle typo_6 */
+.subtitle {
+  position: absolute;
+  left: 19px;
+  top: 89px; /* -917 - (-1006) */
+  width: 238px;
+  height: 27px;
+  margin: 0;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: var(--fig-muted);
+}
+
+/* Mask group with avatar decoration */
+.mask-group {
+  position: absolute;
+  left: 351px; /* -659 - (-1010) = 351 */
+  top: 28px;
+  width: 60px;
+  height: 60px;
+}
+.rect-57 {
+  position: absolute;
+  left: 0; top: 0;
+  width: 60px; height: 60px;
+  background: var(--fig-gray);
+  border-radius: var(--radius-20);
+}
+.img-8 {
+  position: absolute;
+  left: -29px; /* -688 - (-659) */
+  top: -3px;  /* -981 - (-978) */
+  width: 106px; height: 73px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Search group */
+.group-3 {
+  position: absolute;
+  left: 19px;      /* -991 - (-1010) */
+  top: 163px;      /* -843 - (-1006) */
+  width: 392px;
+  height: 60px;
+}
+.rect-66 {
+  position: absolute;
+  left: 0; top: 0;
+  width: 319px; height: 60px;
+  background: var(--color-surface);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-0);
+}
+.group-2 {
+  position: absolute;
+  left: 332px; top: 0;
+  width: 60px; height: 60px;
+}
+.rect-67 {
+  position: absolute;
+  left: 0; top: 0;
+  width: 60px; height: 60px;
+  background: var(--color-error); /* style_5: ef2a39, blending with Ocean by keeping as accent */
+  border-radius: var(--radius-20);
+}
+.settings-sliders {
+  position: absolute;
+  left: 18px; top: 18px;
+  width: 24px; height: 24px;
+  background: var(--fig-white);
+  mask: none;
+  border-radius: 4px;
+  opacity: 0.95;
+}
+
+/* Search icon and label */
+.group-1 {
+  position: absolute;
+  left: 20px; top: 18px;
+  width: 104px; height: 24px;
+  display: flex; align-items: center; gap: 8px;
+}
+.group-1 .search {
+  width: 24px; height: 24px;
+}
+.search-label {
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09375px;
+  color: var(--fig-dark-text);
+}
+
+/* Categories strip */
+.frame-9 {
+  position: absolute;
+  left:  -1px;  /* -1011 - (-1010) */
+  top:   264px; /* -742 - (-1006) */
+  width: 412px; height: 50px;
+}
+.frame-8 {
+  position: absolute;
+  left: 20px; /* -991 - (-1011) */
+  top: 0;
+  width: 467px; height: 50px;
+}
+
+/* Category buttons - shared */
+.group-7, .group-6, .group-5, .group-4 {
+  position: absolute;
+  height: 50px;
+  border-radius: var(--radius-20);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.group-7:hover, .group-6:hover, .group-5:hover, .group-4:hover {
+  box-shadow: var(--shadow-2);
+  transform: translateY(-1px);
+}
+.rect-68, .rect-69, .rect-70, .rect-71 {
+  width: 100%; height: 50px; border-radius: var(--radius-20);
+}
+
+/* All */
+.group-7 { left: 0px; top: 0px; width: 75px; }
+.rect-68 { background: var(--color-primary); /* Ocean primary highlight */ box-shadow: var(--shadow-1); }
+.all {
+  position: absolute; left: 27px; top: 15px;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500;
+  line-height: 19.36px; color: var(--fig-soft);
+}
+
+/* Combos */
+.group-6 { left: 89px; top: 0px; width: 120px; }
+.rect-69 { background: var(--fig-surface); }
+.combos {
+  position: absolute; left: 28px; top: 15px;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500;
+  line-height: 19.36px; color: var(--fig-muted);
+}
+
+/* Sliders */
+.group-5 { left: 223px; top: 0px; width: 120px; }
+.rect-70 { background: var(--fig-surface); }
+.sliders {
+  position: absolute; left: 32px; top: 15px;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500;
+  color: var(--fig-muted); line-height: 19.36px;
+}
+
+/* Classic */
+.group-4 { left: 357px; top: 0px; width: 110px; }
+.rect-71 { background: var(--fig-surface); }
+.classic {
+  position: absolute; left: 23px; top: 15px;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500;
+  color: var(--fig-muted); line-height: 19.36px;
+}
+
+/* Product grid wrapper */
+.group-14 {
+  position: absolute;
+  left: 19px; top: 355px; /* -651 - (-1006) */
+  width: 392px; height: 481px;
+}
+
+/* Card shared */
+.card {
+  position: absolute;
+  width: 185px; height: 225px;
+}
+.card .card-bg {
+  position: absolute; left: 0; top: 0; width: 185px; height: 225px;
+  background: var(--color-surface);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-2);
+}
+
+/* Card 1 positions */
+.group-10 { left: 0px; top: 0px; }
+.group-10 .heart { position: absolute; right: 20px; top: 201px; width: 24px; height: 24px; }
+.group-10 .card-hero { position: absolute; left: 26px; top: 5px; width: 120px; height: 121.7578px; object-fit: cover; }
+.group-10 .shadow-ellipse { position: absolute; left: 47px; top: 109px; width: 91px; height: 11px; opacity: 0.7; }
+.group-10 .card-title {
+  position: absolute; left: 11px; top: 136px; width: 117px; height: 44px; margin: 0;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500; line-height: 19.36px; color: var(--fig-dark-text);
+}
+.group-10 .rating { position: absolute; left: 11px; top: 203px; height: 22px; display: flex; align-items: center; gap: 8px; }
+.group-10 .rating .star { width: 16px; height: 16px; }
+.group-10 .rating-value { font-family: var(--font-roboto); font-size: 16px; font-weight: 500; line-height: 21.55px; color: var(--fig-dark-text); }
+
+/* Card 2 positions */
+.group-11 { left: 207px; top: 0px; }
+.group-11 .heart { position: absolute; right: 20px; top: 201px; width: 24px; height: 24px; }
+.group-11 .card-hero { position: absolute; left: 33px; top: 11px; width: 120px; height: 120px; object-fit: cover; }
+.group-11 .shadow-ellipse-plain {
+  position: absolute; left: 48px; top: 110px; width: 91px; height: 11px;
+  border-radius: 999px; background: rgba(0,0,0,0.12); filter: blur(1px);
+}
+.group-11 .card-title { position: absolute; left: 11px; top: 136px; width: 117px; height: 44px; margin: 0;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500; line-height: 19.36px; color: var(--fig-dark-text); }
+.group-11 .rating { position: absolute; left: 11px; top: 203px; height: 22px; display: flex; align-items: center; gap: 8px; }
+.group-11 .rating .star { width: 16px; height: 16px; background: var(--fig-warm); border-radius: 3px; }
+.group-11 .rating-value { font-family: var(--font-roboto); font-size: 16px; font-weight: 500; line-height: 21.55px; color: var(--fig-dark-text); }
+
+/* Card 3 positions */
+.group-12 { left: 0px; top: 256px; }
+.group-12 .heart { position: absolute; right: 20px; top: 201px; width: 24px; height: 24px; }
+.group-12 .card-hero { position: absolute; left: 20px; top: 0px; width: 150px; height: 137.7px; object-fit: cover; }
+.group-12 .shadow-ellipse { position: absolute; left: 40px; top: 107px; width: 110px; height: 15.7609px; opacity: 0.7; }
+.group-12 .card-title { position: absolute; left: 11px; top: 136px; width: 117px; height: 44px; margin: 0;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500; line-height: 19.36px; color: var(--fig-dark-text); }
+.group-12 .rating { position: absolute; left: 11px; top: 203px; height: 22px; display: flex; align-items: center; gap: 8px; }
+.group-12 .rating .star { width: 16px; height: 16px; background: var(--fig-warm); border-radius: 3px; }
+.group-12 .rating-value { font-family: var(--font-roboto); font-size: 16px; font-weight: 500; line-height: 21.55px; color: var(--fig-dark-text); }
+
+/* Card 4 positions */
+.group-13 { left: 207px; top: 256px; }
+.group-13 .heart { position: absolute; right: 20px; top: 201px; width: 24px; height: 24px; }
+.group-13 .card-hero { position: absolute; left: 30px; top: 25px; width: 145px; height: 100.5938px; object-fit: cover; }
+.group-13 .shadow-ellipse { position: absolute; left: 41.5px; top: 107px; width: 112px; height: 11px; opacity: 0.7; }
+.group-13 .ellipse-accent { position: absolute; left: 150.5px; top: 100.5px; width: 26.6794px; height: 27px; opacity: 0.8; }
+.group-13 .card-title { position: absolute; left: 11px; top: 136px; width: 158px; height: 44px; margin: 0;
+  font-family: var(--font-inter); font-size: 16px; font-weight: 500; line-height: 19.36px; color: var(--fig-dark-text); }
+.group-13 .rating { position: absolute; left: 11px; top: 203px; height: 22px; display: flex; align-items: center; gap: 8px; }
+.group-13 .rating .star { width: 16px; height: 16px; background: var(--fig-warm); border-radius: 3px; }
+.group-13 .rating-value { font-family: var(--font-roboto); font-size: 16px; font-weight: 500; line-height: 21.55px; color: var(--fig-dark-text); }
+
+/* Bottom nav container (Group 16) */
+.group-16 {
+  position: absolute;
+  left: -19px; /* -1029 - (-1010) */
+  top: 856px;  /* -150 - (-1006) */
+  width: 456px; height: 90px;
+  pointer-events: none;
+}
+.group-16 .bo-subtract {
+  position: absolute; left: 0; top: 0; width: 456px; height: 90px;
+}
+.group-16 .bo-ellipse-3 {
+  position: absolute; left: 193px; top: -41px; width: 82px; height: 82px;
+}
+.group-15 {
+  position: absolute; left: 122px; top: 0; width: 224px; height: 82px;
+}
+.group-15 .ellipse-4, .group-15 .ellipse-5 {
+  position: absolute; width: 82px; height: 82px; border-radius: 50%;
+  background: #ef2a39; /* style_12 */
+  opacity: 0; /* Decorative only per screen image overlay - hidden in HTML layout */
+}
+.group-15 .ellipse-4 { left: 0; top: 0; }
+.group-15 .ellipse-5 { left: 142px; top: 0; }
+
+/* Bottom icons absolute positions */
+.nav-icon.home {
+  position: absolute;
+  left: 31px; top: 873px; /* -979/-133 mapped relative; derive exact: -979 - (-1010) = 31, -133 - (-1006) = 873 */
+  width: 24px; height: 24px;
+  border-radius: 5px;
+  background: var(--color-primary);
+  box-shadow: var(--shadow-2);
+}
+.nav-icon.user {
+  position: absolute;
+  left: 113px; top: 873px;
+  width: 24px; height: 24px;
+}
+.nav-icon.comment {
+  position: absolute;
+  left: 294px; top: 873px;
+  width: 24px; height: 24px;
+}
+.dot-ellipse-6 {
+  position: absolute;
+  left: 41px; top: 905px;
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--fig-white);
+  opacity: 0.8;
+}
+
+/* Floating action button (Group 18) */
+.fab.group-18 {
+  position: absolute;
+  left: 179px; top: 808px; /* -831 - (-1010) = 179; -198 - (-1006) = 808 */
+  width: 72px; height: 72px;
+}
+.fab-bg { position: absolute; left: 0; top: 0; width: 72px; height: 72px; filter: drop-shadow(var(--shadow-3)); }
+.fab-plus {
+  position: absolute; left: 28px; top: 28px; width: 16px; height: 16px;
+}
+.fab-plus::before, .fab-plus::after {
+  content: "";
+  position: absolute;
+  background: var(--fig-white);
+  border-radius: 3px;
+}
+.fab-plus::before { left: 0; top: 7px; width: 16px; height: 2px; }
+.fab-plus::after { left: 7px; top: 0; width: 2px; height: 16px; }
+
+/* Hover micro-interactions */
+.group-10:hover .card-bg,
+.group-11:hover .card-bg,
+.group-12:hover .card-bg,
+.group-13:hover .card-bg {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  transform: translateY(-1px);
+}
+.icon-btn.heart:hover { transform: scale(1.05); }
+
+/* Subtle screen gradient tint per theme guidance */
+#screen-home-1-49::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(249,250,251,0.5) 40%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}

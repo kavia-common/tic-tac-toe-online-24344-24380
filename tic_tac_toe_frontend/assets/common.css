@@ -1,0 +1,62 @@
+:root {
+  /* Ocean Professional Theme Tokens */
+  --color-primary: #2563EB;    /* primary */
+  --color-secondary: #F59E0B;  /* secondary/success */
+  --color-success: #F59E0B;
+  --color-error: #EF4444;
+  --color-bg: #f9fafb;
+  --color-surface: #ffffff;
+  --color-text: #111827;
+
+  /* Figma design system mapped tokens */
+  --fig-white: #ffffff;
+  --fig-dark-text: #3c2f2f;
+  --fig-muted: #6a6a6a;
+  --fig-gray: #d9d9d9;
+  --fig-black: #000000;
+  --fig-warm: #ff9633;
+  --fig-surface: #f3f4f6;
+  --fig-soft: #f5f5f5;
+
+  /* Radii */
+  --radius-20: 20px;
+  --radius-35: 35px;
+
+  /* Shadows (from design system) */
+  --shadow-0: 0 4px 19px 0 rgba(0,0,0,0.18);
+  --shadow-1: 0 10px 18px -1px rgba(0,0,0,0.22);
+  --shadow-2: 0 6px 17px 0 rgba(0,0,0,0.20);
+  --shadow-3: 0 5px 16px 5px rgba(0,0,0,0.18);
+
+  /* Typography base (Ocean Professional uses system sans) */
+  --font-lobster: "Lobster", ui-rounded, system-ui, sans-serif;
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-roboto: "Roboto", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-inter: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+  /* Motion */
+  --transition: 200ms ease;
+}
+
+/* Reset and base */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter);
+}
+img { display: block; max-width: 100%; height: auto; }
+
+/* Accessibility focus */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Utility */
+.txt { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon, .icon-btn { cursor: pointer; transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition); }
+.icon-btn:hover { transform: translateY(-1px); }
+button { background: none; border: 0; padding: 0; }
